@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+</head>
+<style>
+#main{
+    margin: auto;
+    width:80%;
+    height: 600px;
+}
+#child{
+    display: flex;
+    height: 120px;
+    width: 300px;
+    gap:20px;
+    margin-top: 20px;
+}
+#child1{
+    display: flex;
+    height: 120px;
+    width: 400px;
+    gap:20px;
+    margin-top: 20px;
+}
+#child2{
+    display: flex;
+    height: 120px;
+    width: 500px;
+    gap:20px;
+    margin-top: 20px;
+}
+.small{
+    display: flex;
+    height:100px;
+    width:100px;
+    gap:20px;
+    margin-top: 20px;
+    background-color: rgb(21, 78, 67);
+    border-radius: 10px;
+}
+</style>
+<body>
+    <div id="main">
+        <div class="small"></div>
+        <div id="child">
+        <div class="small"></div>
+        <div class="small"></div>
+        </div>
+        <div id="child1">
+            <div class="small"></div>  
+            <div class="small"></div>  
+            <div class="small"></div>  
+        </div>
+        <div id="child2">
+            <div class="small"></div>  
+            <div class="small"></div>  
+            <div class="small"></div>  
+            <div class="small"></div>  
+        </div>
+    </div>
+    
+</body>
+</html>
