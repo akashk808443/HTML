@@ -7,26 +7,40 @@
     <title>Zigzag</title>
 </head>
 <style>
-    #container{
+    .child{
         display: flex;
-        width:50%;
-        height:400px;
+        width:40%;
+        height:100px;
         margin: auto;
-        margin-top: 60px;
-        border: 1px solid red;
+        margin-bottom: 5px;
+        margin-top: 40px;
     }
-    #container>div{
+    .child > div{
         width:100px;
         height: 100px;
-        gap: 20px;
-        border: 1px solid black;
+        background-color: teal;
+        margin-left: 30px;
+        border-radius: 5px;
+    }
+    .expand{
+        flex-grow: 1;
     }
 </style>
 <body>
-    <div id="container">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
+      <div class="child">
+        <div></div>
+        <div class="expand"></div>
+        <div></div>
+      </div>
+      <div class="child">
+        <div class="expand"></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="child">
+        <div></div>
+        <div></div>
+        <div class="expand"></div>
+      </div>
 </body>
 </html>
