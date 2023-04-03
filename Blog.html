@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ #main{
+    width:65%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,400px);
+    margin: auto;
+    gap: 10px;
+ }
+
+ #main>div>p{
+    font-size: 13px;
+    color: rgb(95, 95, 96);
+ }
+ h1{
+    text-align: center;
+ }
+ img{
+    width: 100%;
+    height:210px;
+ }
+ @media all and (min-width:300px) and (max-width:700px){
+    #main{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,400px);
+    }
+ }
+ @media all and (min-width:50px) and (max-width:300px){
+    #main{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,400px);
+    }
+ }
+</style>
+<body>
+    <h1>OUR BLOG</h1>
+    <div id="main">
+       <div>
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-_UQaOkz459u1FEO14yEyT07OeOKT661njQ&usqp=CAU" alt="">
+         <h5>Black Friday Guide:Best Sales & Discount Codes</h5>
+         <p>By Nancy Ward on July 22,2017</p>
+         <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur Neque porro quisquam est qui dolorem ipsum</p>
+       </div>
+       <div>
+         <img src="https://2.bp.blogspot.com/-8urCQ8aVoBA/WITb5cQepGI/AAAAAAAANXU/25qg5T8iNpo-xY66xYxtQId2OK2DwkcRgCEw/w640-h638/20.jpg" alt="">
+         <h5>The White Sneakers Nearly Every  fashion girls Own</h5>
+         <p>By Nancy Ward on July 22,2017</p>
+         <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur Neque porro quisquam est qui dolorem ipsum</p>
+       </div>
+       <div>
+         <img src="https://5.imimg.com/data5/SELLER/Default/2022/3/XW/KK/XB/148030461/small-20-l-backpack-stylish-backpack-for-girls-black--500x500.jpg" alt="">
+         <h5>New York SS Street Style:alinna maslin</h5>
+         <p>By Nancy Ward on July 22,2017</p>
+         <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur Neque porro quisquam est qui dolorem ipsum </p>
+       </div>
+    </div>
+</body>
+</html>
