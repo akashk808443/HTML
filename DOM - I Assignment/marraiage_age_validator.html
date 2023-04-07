@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriage age</title>
+</head>
+<body>
+    <input type="number" placeholder="enter year of birth" id="age" value="">
+    <select id="gender">
+        <option value="">....</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+    <button onClick="checkAge()">check age</button>
+</body>
+</html>
+
+<script>
+    var presentYear = 2023;
+    function checkAge(){
+        var yearOfBirth=document.querySelector("#age").value;
+        var gender=document.querySelector("#gender").value;
+        var validAge=presentYear-yearOfBirth;
+
+        if(validAge>=21 && gender=="female"){
+            alert("female has a valid age to get married")
+        }
+        else  if(validAge>=21 && gender=="male"){
+            alert("male has a valid age to get married")
+        }
+        else
+        {
+            alert("not valid")
+        }
+    }
+</script>
