@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+          width:70%;
+          margin:auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        text-align: center;
+      }
+      p{
+          font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <!-- <div>
+                    <img src="" alt="">
+                    <h2></h2>
+                    <p>Roles</p>
+                    <img src="" alt="">
+            </div> -->
+    </div>
+  </body>
+</html>
+
+<script>
+  var data = [
+    {
+        imgUrl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDE7TywFSdyIxFHMeA9xRdP6v57tcY88_lrA&usqp=CAU",
+        name:"LATEST MEN'S SNEAKER",
+        price:"$25.00",
+        strikedOffPrice:"$95.00"
+    },{
+        imgUrl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDE7TywFSdyIxFHMeA9xRdP6v57tcY88_lrA&usqp=CAU",
+        name:"LATEST MEN'S SNEAKER",
+        price:"$35.00",
+        strikedOffPrice:"$100.00"
+    },{
+        imgUrl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDE7TywFSdyIxFHMeA9xRdP6v57tcY88_lrA&usqp=CAU",
+        name:"LATEST MEN'S SNEAKER",
+        price:"$35.00",
+        strikedOffPrice:"$100.00"
+    },
+    {
+        imgUrl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDE7TywFSdyIxFHMeA9xRdP6v57tcY88_lrA&usqp=CAU",
+        name:"LATEST MEN'S SNEAKER",
+        price:"$35.00",
+        strikedOffPrice:"$100.00"
+    }
+];
+    data.map(function (elem, index, array) {
+    var div = document.createElement("div");
+    var avatar = document.createElement("img");
+    avatar.setAttribute("src", elem.imgUrl);
+
+    var name = document.createElement("p");
+    name.innerText = elem.name;
+
+    var price = document.createElement("h4");
+    price.innerText = elem.price;
+
+    var  strikedOffPrice = document.createElement("p");
+    strikedOffPrice.innerText = elem. strikedOffPrice;
+    div.append(avatar, name, price,  strikedOffPrice);
+    document.querySelector("#container").append(div);
+  });
+</script>
